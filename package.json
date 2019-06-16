@@ -1,0 +1,47 @@
+{
+  "name": "@cityplus/dashboard-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dashboard API",
+  "main": "./bin/www",
+  "scripts": {
+    "start": "node .",
+    "debug": "./node_modules/.bin/nodemon --inspect ./debug.js --watch --delay 3000 ",
+    "build": "./node_modules/.bin/gulp build",
+    "build:bugfix": "./node_modules/.bin/gulp build:bugfix",
+    "build:feature": "./node_modules/.bin/gulp build:feature"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com-personal:cityplus/dashboard-api.git"
+  },
+  "keywords": [],
+  "author": "Robust Choice, Inc",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "dotenv": "^8.0.0",
+    "gulp": "^4.0.2",
+    "gulp-bump": "^3.1.3",
+    "gulp-filter": "^6.0.0",
+    "gulp-git": "^2.9.0",
+    "gulp-tag-version": "^1.3.1",
+    "mkdirp": "^0.5.1",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.1",
+    "rimraf": "^2.6.3"
+  },
+  "dependencies": {
+    "@hapi/joi": "^15.0.3",
+    "async": "^3.0.1",
+    "axios": "^0.19.0",
+    "env-var": "^5.0.0",
+    "express": "^4.17.1",
+    "helmet": "^3.18.0",
+    "http-errors": "^1.7.2",
+    "morgan": "^1.9.1",
+    "pkg-env": "^1.0.2",
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^3.9.0"
+  }
+}
